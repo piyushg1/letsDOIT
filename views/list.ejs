@@ -25,7 +25,7 @@
     </div>
     <div class="box">
         <% for(let i=0;i<newlistitems.length;i++) { %>
-            <form action="/delete" method="post">
+            <form action="https://letsdoitpiyush.herokuapp.com/delete" method="post">
 
                 <div class="item">
                     <input type="checkbox" onchange="this.form.submit()" name="checkbox"
@@ -36,7 +36,7 @@
                 </div>
             </form>
             <% } %>
-                <form class='item' action="/" method="post">
+                <form class='item' action="https://letsdoitpiyush.herokuapp.com/" method="post">
                     <input type="text" name="new_item" placeholder="new item" autocomplete="off">
                     <button type="submit" name="button">+</button>
                 </form>
